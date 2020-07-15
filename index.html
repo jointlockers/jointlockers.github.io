@@ -11,9 +11,8 @@
     <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link
-      href="//fonts.googleapis.com/css?family=Raleway:400,300,600"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,100&family=Shrikhand&display=swap"
       rel="stylesheet"
-      type="text/css"
     />
 
     <!-- CSS
@@ -27,23 +26,46 @@
   </head>
   <body>
     <section class="container">
-      <section class="left"></section>
+      <section class="left hide-mobile"></section>
       <section class="right">
         <div class="right--content">
-          <div class="right--content-top">As seen on AR btn</div>
+          <div class="right--content-top">
+            <img
+              src="images/ar-badge.png"
+              alt="as seen on AR badge"
+              width="63px"
+              height="50px"
+            />
+          </div>
           <div class="right--content-middle">
-            <h1>JOINTLOCKERS</h1>
+            <img
+              src="images/jointlockers-logo.png"
+              alt="jointlockers logo"
+              class="logo"
+            />
             <h2>
               are now exclusively sold on
-              <a href="anotherrom.io">anotherroom.io</a>
+              <a href="https://anotherroom.io/" class="link">anotherroom.io</a>
             </h2>
-            <a href="/" class="button">Take Me There</a>
+            <a href="https://anotherroom.io/" class="button3d">Take Me There</a>
           </div>
           <div class="right--content-bottom">
-            <p>This page will automatically redirect you after 10 sec.</p>
+            <p>
+              This page will automatically redirect you after
+              <span id="countdown-timer">10</span> sec.
+            </p>
           </div>
         </div>
       </section>
     </section>
+
+    <script type="text/javascript">
+      var timeleft = 10;
+      var downloadTimer = setInterval(function () {
+        timeleft--;
+        document.getElementById("countdown-timer").textContent = timeleft;
+        if (timeleft <= 0) clearInterval(downloadTimer);
+      }, 1000);
+    </script>
   </body>
 </html>
