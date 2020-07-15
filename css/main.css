@@ -1,0 +1,174 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.button {
+  display: inline-block;
+  padding: 20px;
+  background-color: black;
+  color: #fff;
+  margin-top: 15px;
+  text-decoration: none;
+}
+
+.logo {
+  width: 259px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  background-image: linear-gradient(#fff, #fff);
+  background-position: 0 90%;
+  background-repeat: no-repeat;
+  background-size: 100% 1px;
+}
+
+a:hover {
+  cursor: pointer !important;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+  font-weight: 100;
+  font-size: 16px;
+}
+
+.left,
+.right {
+  width: 100%;
+  height: 100%;
+}
+
+.left {
+  background-image: url("../images/jointlockers-redirect-image.jpg");
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.right {
+  color: #fff;
+  background-color: #6b9199;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right--content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.right--content-top,
+.right--content-middle,
+.right--content-bottom {
+  padding: 40px;
+}
+
+.right--content-bottom {
+  width: 295px;
+}
+
+.button3d {
+  display: inline-block;
+  box-sizing: border-box;
+  border: none;
+  box-shadow: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  text-decoration: none;
+  width: 210px;
+  height: 66px;
+  padding: 20px 5px 32px 25px;
+  background-color: transparent;
+  background-image: url("../images/button-3d.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  color: #2c2730;
+  font-family: Shrikhand, cursive;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0.13px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.right--content-middle .button3d {
+  margin-top: 40px;
+}
+
+/* ---- MOBLE STYLES ---- */
+@media only screen and (max-width: 450px) {
+}
+@media only screen and (max-width: 768px) {
+  .hide-mobile {
+    display: none;
+  }
+  h2 {
+    font-size: 14px;
+  }
+
+  .logo {
+    width: 207px;
+  }
+
+  .right--content {
+    min-height: 800px;
+    max-height: 800px;
+    overflow: scroll;
+  }
+
+  .right--content-top {
+    width: 80%;
+    height: 80%;
+    max-height: 300px;
+    max-width: 300px;
+    margin-top: 54px;
+    border-radius: 16px;
+    background-image: url("../images/jointlockers-redirect-image.jpg");
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 0px;
+    position: relative;
+  }
+  .right--content-top img {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: -28px;
+  }
+
+  .right--content-middle .button3d {
+    margin-top: 19px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .hide-desktop {
+    display: none;
+  }
+}

@@ -1,1 +1,89 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>JOINTLOCKERS</title>
+    <meta
+      name="description"
+      content="Jointlockers. Now exclusively sold on anotherroom.io. Take me there."
+    />
+    <meta name="author" content="Kash" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      property="og:image"
+      content="images/jointlockers-redirect-image.jpg"
+    />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1024" />
+    <meta property="og:image:height" content="1024" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.jointlockers.com/" />
+    <meta property="og:title" content="JOINTLOCKERS" />
+    <meta
+      property="og:description"
+      content="Now exclusively sold on anotherroom.io. Take me there."
+    />
+    <!-- Add this for redirect: <meta http-equiv="refresh" content="10;url=https://anotherroom.io/" /> -->
+
+    <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,100&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+
+    <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+  </head>
+  <body>
+    <section class="container">
+      <section class="left hide-mobile"></section>
+      <section class="right">
+        <div class="right--content">
+          <div class="right--content-top">
+            <img
+              src="images/ar-badge.png"
+              alt="as seen on AR badge"
+              width="63px"
+              height="50px"
+            />
+          </div>
+          <div class="right--content-middle">
+            <img
+              src="images/jointlockers-logo.png"
+              alt="jointlockers logo"
+              class="logo"
+            />
+            <h2>
+              are now exclusively sold on
+              <a href="https://anotherroom.io/" class="link">anotherroom.io</a>
+            </h2>
+            <a href="https://anotherroom.io/" class="button3d">Take Me There</a>
+          </div>
+          <div class="right--content-bottom">
+            <p>
+              This page will automatically redirect you after
+              <span id="countdown-timer">10</span> sec.
+            </p>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <script type="text/javascript">
+      var timeleft = 10;
+      var downloadTimer = setInterval(function () {
+        timeleft--;
+        document.getElementById("countdown-timer").textContent = timeleft;
+        if (timeleft <= 0) clearInterval(downloadTimer);
+      }, 1000);
+    </script>
+  </body>
+</html>
