@@ -51,16 +51,19 @@ h2 {
 }
 
 .left {
-  background-image: url("../images/jointlockers-redirect-image.jpg"); /* The image used */
-  background-color: #cccccc; /* Used if the image is unavailable */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
+  background-image: url("../images/jointlockers-redirect-image.jpg");
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .right {
   color: #fff;
   background-color: #6b9199;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .right--content {
@@ -109,23 +112,59 @@ h2 {
   text-align: center;
 }
 
+.right--content-middle .button3d {
+  margin-top: 40px;
+}
+
 /* ---- MOBLE STYLES ---- */
+@media only screen and (max-width: 450px) {
+}
 @media only screen and (max-width: 768px) {
   .hide-mobile {
     display: none;
   }
+  h2 {
+    font-size: 14px;
+  }
+
   .logo {
     width: 207px;
   }
+
+  .right--content {
+    min-height: 800px;
+    max-height: 800px;
+    overflow: scroll;
+  }
+
   .right--content-top {
-    margin-top: 40px;
-    width: 300px;
-    height: 300px;
+    width: 80%;
+    height: 80%;
+    max-height: 300px;
+    max-width: 300px;
+    margin-top: 54px;
+    border-radius: 16px;
     background-image: url("../images/jointlockers-redirect-image.jpg");
     background-color: #cccccc;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding-top: 0px;
+    position: relative;
+  }
+  .right--content-top img {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: -28px;
+  }
+
+  .right--content-middle .button3d {
+    margin-top: 19px;
+  }
 }
 
 @media only screen and (min-width: 768px) {
