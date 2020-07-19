@@ -132,7 +132,6 @@ h2 {
   }
 
   .right--content {
-    min-height: 800px;
     max-height: 800px;
     overflow: hidden;
   }
