@@ -75,9 +75,8 @@ h2 {
   text-align: center;
 }
 
-.right--content-top,
-.right--content-middle, {
-  padding: 40px;
+.right--content-top {
+  padding-top: 40px;
 }
 
 .right--content-bottom {
