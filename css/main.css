@@ -118,6 +118,10 @@ h2 {
 
 /* ---- MOBLE STYLES ---- */
 @media only screen and (max-width: 450px) {
+  .right--content-middle {
+    max-width: 90%;
+    padding-top: 20px;
+  }
 }
 @media only screen and (max-width: 768px) {
   .hide-mobile {
