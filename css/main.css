@@ -1,6 +1,7 @@
 .container {
   width: 100%;
   height: 100vh;
+  min-height: -webkit-fill-available;
   display: flex;
   flex-direction: row;
 }
@@ -68,6 +69,7 @@ h2 {
 
 .right--content {
   height: 100vh;
+  min-height: -webkit-fill-available;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -141,16 +143,16 @@ h2 {
 
   .right--content {
     width: 100%;
-    max-height: 800px;
     overflow: hidden;
-    justify-content: space-around;
+    justify-content: inherit;
   }
 
   .right--content-top {
-    width: 90%;
-    height: 90%;
-    max-height: 300px;
-    max-width: 300px;
+    width: 80%;
+    height: 0;
+    padding-bottom: 80%;
+    max-width: 400px;
+    max-height: 400px;
     margin-top: 54px;
     border-radius: 16px;
     background-image: url("../images/jointlockers-redirect-image.jpg");
@@ -161,6 +163,13 @@ h2 {
     padding-top: 0px;
     position: relative;
   }
+
+  /* .right--content-top:after {
+    content: "";
+    display: block;
+    padding-top: 100%;
+  } */
+
   .right--content-top img {
     position: absolute;
     margin-left: auto;
@@ -173,7 +182,7 @@ h2 {
 
   .right--content-middle {
     max-width: 90%;
-    padding-top: 55px;
+    padding-top: 50px;
   }
 
   .right--content-middle .button3d {
@@ -182,8 +191,7 @@ h2 {
 
   .right--content-bottom {
     width: auto;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding: 20px 40px;
   }
 }
 
