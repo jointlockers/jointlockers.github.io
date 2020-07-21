@@ -185,9 +185,11 @@ h2 {
   }
 }
 
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 500px) {
   .right--content-top {
     margin-top: 10px;
   }
-
+  .right--content-bottom {
+    padding: 0px 40px;
+  }
 }
