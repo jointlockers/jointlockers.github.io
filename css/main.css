@@ -78,6 +78,11 @@ h2 {
   text-align: center;
 }
 
+.right--content-middle {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 .right--content-top {
   padding-top: 40px;
 }
@@ -119,14 +124,8 @@ h2 {
 }
 
 /* ---- MOBLE STYLES ---- */
-@media only screen and (max-width: 768px) {
-  /* .footer {
-    position: fixed; 
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 50px;
-  } */
+@media only screen and (max-width: 600px) {
+
   .right {
     height: 95%;
   }
@@ -149,9 +148,9 @@ h2 {
   }
 
   .right--content-top {
-    width: 60%;
+    width: 80%;
     height: 0;
-    padding-bottom: 60%;
+    padding-bottom: 80%;
     margin-top: 54px;
     border-radius: 16px;
     background-image: url("../images/jointlockers-redirect-image.jpg");
@@ -162,12 +161,6 @@ h2 {
     padding-top: 0px;
     position: relative;
   }
-
-  /* .right--content-top:after {
-    content: "";
-    display: block;
-    padding-top: 100%;
-  } */
 
   .right--content-top img {
     position: absolute;
@@ -191,6 +184,12 @@ h2 {
   .right--content-bottom {
     width: auto;
     padding: 20px 40px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .right--content-middle {
+    padding-top: 20px;
   }
 }
 
