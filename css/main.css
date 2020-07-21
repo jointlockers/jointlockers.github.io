@@ -124,7 +124,7 @@ h2 {
 }
 
 /* ---- MOBLE STYLES ---- */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 640px) {
   .right {
     height: 95% !important;
   }
@@ -183,4 +183,11 @@ h2 {
   .right--content-bottom {
     padding: 20px 40px;
   }
+}
+
+@media only screen and (max-width: 540px) {
+  .right--content-top {
+    margin-top: 10px;
+  }
+
 }
