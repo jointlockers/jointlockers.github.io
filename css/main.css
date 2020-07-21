@@ -4,6 +4,7 @@
   min-height: -webkit-fill-available;
   display: flex;
   flex-direction: row;
+  background-color: #6b9199;
 }
 
 .button {
@@ -126,6 +127,9 @@ h2 {
     right: 0;
     height: 50px;
   } */
+  .right {
+    height: 95%;
+  }
 
   .hide-mobile {
     display: none;
@@ -190,10 +194,8 @@ h2 {
   }
 }
 
-@media only screen and (max-width: 600px) {
-  .right--content-top {
-    width: 80%;
-    height: 0;
-    padding-bottom: 80%;
+@media only screen and (max-width: 400px) {
+  .right--content-middle {
+    padding-top: 20px;
   }
 }
