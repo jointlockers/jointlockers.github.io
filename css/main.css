@@ -189,6 +189,9 @@ h2 {
   .right--content-top {
     margin-top: 10px;
   }
+  .right--content-middle {
+    padding-top: 35px;
+  }
   .right--content-bottom {
     padding: 0px 40px;
   }
