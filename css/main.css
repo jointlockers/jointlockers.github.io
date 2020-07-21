@@ -118,9 +118,6 @@ h2 {
 }
 
 /* ---- MOBLE STYLES ---- */
-@media only screen and (max-width: 450px) {
-
-}
 @media only screen and (max-width: 768px) {
   /* .footer {
     position: fixed; 
@@ -148,11 +145,9 @@ h2 {
   }
 
   .right--content-top {
-    width: 80%;
+    width: 60%;
     height: 0;
-    padding-bottom: 80%;
-    max-width: 400px;
-    max-height: 400px;
+    padding-bottom: 60%;
     margin-top: 54px;
     border-radius: 16px;
     background-image: url("../images/jointlockers-redirect-image.jpg");
@@ -195,8 +190,10 @@ h2 {
   }
 }
 
-/* @media only screen and (min-width: 768px) {
-  .hide-desktop {
-    display: none;
+@media only screen and (max-width: 600px) {
+  .right--content-top {
+    width: 80%;
+    height: 0;
+    padding-bottom: 80%;
   }
-} */
+}
