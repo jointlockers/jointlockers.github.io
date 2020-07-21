@@ -126,7 +126,7 @@ h2 {
 /* ---- MOBLE STYLES ---- */
 @media only screen and (max-width: 640px) {
   .right {
-    height: 95% !important;
+    height: 93% !important;
   }
 
   .hide-mobile {
